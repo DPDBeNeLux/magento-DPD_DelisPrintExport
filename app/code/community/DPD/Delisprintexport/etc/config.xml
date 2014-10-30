@@ -17,16 +17,11 @@
     </modules>
     
     <global>
-	    <models>
-             <dpd_delisprintexport>
-			    <class>DPD_DelisPrintExport_Model</class>
-			 </dpd_delisprintexport>
-	    </models>
-        <helpers>
+	<models>
             <dpd_delisprintexport>
-                <class>DPD_DelisPrintExport_Helper</class>
-            </dpd_delisprintexport>
-        </helpers>
+		<class>DPD_DelisPrintExport_Model</class>
+	    </dpd_delisprintexport>
+	</models>
     </global>
 
     <admin>
