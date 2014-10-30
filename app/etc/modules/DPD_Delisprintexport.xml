@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DPD DelisPrintExport initial configuration
+ *
+ * @author Michiel Van Gucht
+ */
+-->
+<config>
+    <modules>
+        <DPD_DelisPrintExport>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <DPD_Shipping />
+            </depends>
+        </DPD_DelisPrintExport>
+    </modules>
+</config>

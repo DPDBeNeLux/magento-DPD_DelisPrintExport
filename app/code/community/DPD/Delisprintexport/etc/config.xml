@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DPD DelisPrintExport configuration
+ *
+ * @author Michiel Van Gucht
+ */
+-->
+<config>
+    <modules>
+        <DPD_DelisPrintExport>
+            <version>0.1.1</version>
+            <depends>
+                <DPD_Shipping />
+            </depends>
+        </DPD_DelisPrintExport>
+    </modules>
+    
+    <global>
+	    <models>
+             <dpd_delisprintexport>
+			    <class>DPD_DelisPrintExport_Model</class>
+			 </dpd_delisprintexport>
+	    </models>
+        <helpers>
+            <dpd_delisprintexport>
+                <class>DPD_DelisPrintExport_Helper</class>
+            </dpd_delisprintexport>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <DPD_DelisPrintExport after="Mage_Adminhtml">DPD_DelisPrintExport</DPD_DelisPrintExport>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <events>
+            <core_block_abstract_prepare_layout_before>
+                <observers>
+                    <addMassaction>
+                        <class>DPD_DelisPrintExport_Model_Observer</class>
+                        <method>addMassAction</method>
+                        <type>model</type>
+                    </addMassaction>
+                </observers>
+            </core_block_abstract_prepare_layout_before>
+        </events>
+    </adminhtml>
+</config>
