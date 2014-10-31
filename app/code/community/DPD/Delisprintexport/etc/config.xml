@@ -8,15 +8,15 @@
 -->
 <config>
     <modules>
-        <Dpd_Delisprintexport>
+        <DPD_Delisprintexport>
             <version>0.1.2</version>
-        </Dpd_Delisprintexport>
+        </DPD_Delisprintexport>
     </modules>
     
     <global>
 	       <models>
                 <delisprintexport>
-		            <class>Dpd_Delisprintexport_Model</class>
+		            <class>DPD_Delisprintexport_Model</class>
 	            </delisprintexport>
 	       </models>
     </global>
@@ -26,7 +26,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <Dpd_Delisprintexport after="Mage_Adminhtml">Dpd_Delisprintexport</Dpd_Delisprintexport>
+                        <DPD_Delisprintexport after="Mage_Adminhtml">DPD_Delisprintexport</DPD_Delisprintexport>
                     </modules>
                 </args>
             </adminhtml>
@@ -39,7 +39,7 @@
                 <observers>
                     <dpd_delisprintexport_addmassaction_observer>
 		                <type>singleton</type>
-                        <class>Dpd_Delisprintexport_Model_Observer</class>
+                        <class>DPD_Delisprintexport_Model_Observer</class>
                         <method>addMassAction</method>
                     </dpd_delisprintexport_addmassaction_observer>
                 </observers>

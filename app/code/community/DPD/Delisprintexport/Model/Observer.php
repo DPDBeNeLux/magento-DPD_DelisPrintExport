@@ -5,7 +5,7 @@
  * @category               Export
  * @author               Michiel Van Gucht
  */
-class Dpd_Delisprintexport_Model_Observer
+class DPD_Delisprintexport_Model_Observer
 {
     public function addMassAction($observer)
     {
