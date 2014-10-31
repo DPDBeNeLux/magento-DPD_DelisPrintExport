@@ -15,9 +15,9 @@
     
     <global>
 	       <models>
-            <delisprintexport>
-		              <class>Dpd_Delisprintexport_Model</class>
-	           </delisprintexport>
+                <delisprintexport>
+		            <class>Dpd_Delisprintexport_Model</class>
+	            </delisprintexport>
 	       </models>
     </global>
 
@@ -26,7 +26,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <Dpd_Delisprintexport after="Mage_Adminhtml">DPD_Delisprintexport</Dpd_Delisprintexport>
+                        <Dpd_Delisprintexport after="Mage_Adminhtml">Dpd_Delisprintexport</Dpd_Delisprintexport>
                     </modules>
                 </args>
             </adminhtml>

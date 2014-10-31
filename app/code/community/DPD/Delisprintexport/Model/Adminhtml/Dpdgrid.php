@@ -5,7 +5,7 @@
  * @category               Export
  * @author               Michiel Van Gucht
  */
-class DPD_DelisPrintExport_Model_Adminhtml_Dpdgrid extends Mage_Core_Model_Abstract
+class Dpd_Delisprintexport_Model_Adminhtml_Dpdgrid extends Mage_Core_Model_Abstract
 {
 	/**
      * Creates an export to delisprint
