@@ -8,12 +8,12 @@
 -->
 <config>
     <modules>
-        <DPD_DelisPrintExport>
+        <Dpd_Delisprintexport>
             <active>true</active>
             <codePool>community</codePool>
             <depends>
                 <DPD_Shipping />
             </depends>
-        </DPD_DelisPrintExport>
+        </Dpd_Delisprintexport>
     </modules>
 </config>

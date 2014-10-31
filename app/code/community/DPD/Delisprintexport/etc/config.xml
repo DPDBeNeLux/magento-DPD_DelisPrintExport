@@ -8,20 +8,17 @@
 -->
 <config>
     <modules>
-        <DPD_DelisPrintExport>
-            <version>0.1.1</version>
-            <depends>
-                <DPD_Shipping />
-            </depends>
-        </DPD_DelisPrintExport>
+        <Dpd_Delisprintexport>
+            <version>0.1.2</version>
+        </Dpd_Delisprintexport>
     </modules>
     
     <global>
-	<models>
-            <dpd_delisprintexport>
-		<class>DPD_DelisPrintExport_Model</class>
-	    </dpd_delisprintexport>
-	</models>
+	       <models>
+            <delisprintexport>
+		              <class>Dpd_Delisprintexport_Model</class>
+	           </delisprintexport>
+	       </models>
     </global>
 
     <admin>
@@ -29,7 +26,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <DPD_DelisPrintExport after="Mage_Adminhtml">DPD_DelisPrintExport</DPD_DelisPrintExport>
+                        <Dpd_Delisprintexport after="Mage_Adminhtml">DPD_Delisprintexport</Dpd_Delisprintexport>
                     </modules>
                 </args>
             </adminhtml>
@@ -40,11 +37,11 @@
         <events>
             <core_block_abstract_prepare_layout_before>
                 <observers>
-                    <addMassaction>
-                        <class>DPD_DelisPrintExport_Model_Observer</class>
+                    <dpd_delisprintexport_addmassaction_observer>
+		                <type>singleton</type>
+                        <class>Dpd_Delisprintexport_Model_Observer</class>
                         <method>addMassAction</method>
-                        <type>model</type>
-                    </addMassaction>
+                    </dpd_delisprintexport_addmassaction_observer>
                 </observers>
             </core_block_abstract_prepare_layout_before>
         </events>

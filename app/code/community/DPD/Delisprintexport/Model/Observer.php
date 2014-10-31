@@ -5,10 +5,10 @@
  * @category               Export
  * @author               Michiel Van Gucht
  */
-class DPD_DelisPrintExport_Model_Observer
+class Dpd_Delisprintexport_Model_Observer
 {
     public function addMassAction($observer)
-    {    
+    {
         $block = $observer->getEvent()->getBlock();
         if(get_class($block) =='Mage_Adminhtml_Block_Widget_Grid_Massaction'
             && $block->getRequest()->getControllerName() == 'dpdorder')

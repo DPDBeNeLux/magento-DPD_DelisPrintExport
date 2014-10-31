@@ -14,7 +14,7 @@ class DPD_DelisPrintExport_DelisprintexportController extends Mage_Adminhtml_Con
 		$delisprintVersion = $this->getRequest()->getParam('v');
         
 		try {
-            $path = Mage::getModel('dpd_delisprintexport/adminhtml_dpdgrid')->delisprintExportOrders($orderIds, $delisprintVersion);
+            $path = Mage::getModel('delisprintexport/adminhtml_dpdgrid')->delisprintExportOrders($orderIds, $delisprintVersion);
             
             if (!$path) {
                 $message = Mage::helper('dpd')->__('No labels for export found.');
