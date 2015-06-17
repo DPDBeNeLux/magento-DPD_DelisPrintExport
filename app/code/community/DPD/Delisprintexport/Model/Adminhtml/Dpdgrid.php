@@ -88,10 +88,12 @@ class DPD_Delisprintexport_Model_Adminhtml_Dpdgrid extends Mage_Core_Model_Abstr
 		}
 		
 		$csvLineArray[] = $cneeAddress->getFirstname() . " " . $cneeAddress->getLastname();
+		$csvLineArray[] = $cneeAddress->getCompany();
 		$csvLineArray[] = $cneeAddress->getStreet(1) . " " . $cneeAddress->getStreet(2);
 		$csvLineArray[] = $cneeAddress->getCountry();
 		$csvLineArray[] = $cneeAddress->getPostcode();
 		$csvLineArray[] = $cneeAddress->getCity();
+		$csvLineArray[] = $cneeAddress->getEmail();
 		
 		$csvLineArray[] = $order->getRealOrderId();
 		
